@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(240, 217, 10, 0.89);
+        }
+        .head{
+            display: flex;
+            margin: 0;
+            height: 150px;
+        }
+        .head-1{
+            font-size: x-large;
+            padding-left: 50px;
+        }
+        .topnav{
+            color: white;
+            width: auto;
+         padding: 5px;
+        }
+        .topnav a{
+        text-decoration: none;
+        color: white;
+        margin-left: 50px;
+        padding-top: 10px;
+        font-size: x-large;
+        overflow: hidden;
+        }
+        .topnav a:hover{
+            background-color: black;
+            color: white;
+            border-radius: 9px 9px 9px 9px ;
+            transition: width 5s;
+            height: 1px;
+        }
+        .icecream{
+            background-color: black;
+             color: white;
+             border-radius: 9px 9px 9px 9px ;
+        }
+        .mySlides {display: none;
+            border-radius: 5px 5px 5px 5px;
+            margin: 0;
+            }
+            img {vertical-align: middle;
+            opacity: 1;}
+                   
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 100%;
+              position: relative;
+              margin: auto;
+            }
+            
+            /* Caption text */
+            .text {
+              color: #f2f2f2;
+              font-size: 10px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            
+              border-radius: 5px 5px 5px 5px;
+            }
+            
+            /* The dots/bullets/indicators */
+            .dot {
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 9.6s ease;
+            }
+            
+            .active {
+              background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+              animation-name: fade;
+              animation-duration: 20s;
+            }
+            
+            @keyframes fade {
+              from {opacity: 1.8} 
+              to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 100%) {
+              .text {font-size: 11px}
+            }
+            .footer{
+                background-color:white;
+                color:black;
+                width: 100%;
+                height: auto;
+                padding: 2%;
+            }
+            /* this is second image div*/
+#ice{
+  display: flex;
+   width: 100%;
+   height: auto;
+   margin-left: 2%;
+}
+.ice-1{
+  width: 22%;
+  height: 220px;
+  margin-top: 40px;
+  margin-left: 5px;
+  background-image: url(choclate.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+
+}
+.ice-1:hover{
+  opacity: 1;
+  width: 22%;
+  height: 220px;
+  background-image: url(choclate.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+}
+.ice-2{
+  width: 22%;
+  height: 220px;
+  margin-top: 40px;
+  margin-left: 25px;
+  background-image: url(cupcake.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+
+}
+.ice-2:hover{
+  opacity: 1;
+  width: 22%;
+  height: 220px;
+  background-image: url(cupcake.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+}
+.ice-3{
+  width: 22%;
+  height: 220px;
+  margin-top: 40px;
+  margin-left: 25px;
+  background-image: url(butterscotch.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+
+}
+.ice-3:hover{
+  opacity: 1;
+  width: 22%;
+  height: 220px;
+  background-image: url(butterscotch.webp);
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 70%;
+}
+.ice-4{
+  width: 22%;
+  height: 220px;
+  margin-top: 40px;
+  margin-left: 25px;
+  background-image: url(kulfi.webp);
+  background-repeat: no-repeat;
+  background-size:cover;
+ border-radius:50% ;
+
+}
+.ice-4:hover{
+  opacity: 1;
+  width: 22%;
+  height: 220px;
+  background-image: url(kulfi.webp);
+  background-repeat: no-repeat;
+  background-size:cover;
+ border-radius: 50%;
+}
+
+
+.ice-btn{
+  width: 100%;
+   background: none;
+  margin-top: 140px;
+  font-size: xx-large;
+  background-color: none;
+  color:white;
+  opacity: 1;
+text-align: center;
+border: none;
+cursor: pointer;
+font-weight: 100px;
+
+  
+}
+.ice-btn:hover{
+  opacity: 1;
+letter-spacing: 5px;
+  margin-top: 90px;
+font-size:250%;
+transition: 1s;
+}
+.ice-btn1{
+  width: 100%;
+   background: none;
+  margin-top: 140px;
+  font-size: xx-large;
+  background-color: none;
+  color:white;
+  opacity: 1;
+text-align: center;
+border: none;
+cursor: pointer;
+font-weight: 100px;
+
+  
+}
+.ice-btn1:hover{
+  opacity: 1;
+letter-spacing: 6px;
+  margin-top: 90px;
+font-size:250%;
+transition: 1s;
+}
+.ice-btn2{
+  width: 100%;
+   background: none;
+  margin-top: 140px;
+  font-size: xx-large;
+  background-color: none;
+  color:white;
+  opacity: 1;
+text-align: center;
+border: none;
+cursor: pointer;
+font-weight: 100px;
+
+  
+}
+.ice-btn2:hover{
+  opacity: 1;
+letter-spacing: 1px;
+  margin-top: 90px;
+font-size:250%;
+transition: 1s;
+}
+.ice-btn3{
+  width: 100%;
+   background: none;
+  margin-top: 140px;
+  font-size: xx-large;
+  background-color: none;
+  color:white;
+  opacity: 1;
+text-align: center;
+border: none;
+cursor: pointer;
+font-weight: 100px;
+
+  
+}
+.ice-btn3:hover{
+  opacity: 1;
+letter-spacing: 7px;
+  margin-top: 90px;
+font-size:250%;
+transition: 1s;
+}
+ /* this is third image div*/
+ #cream{
+  display: flex;
+   width: 100%;
+   height: auto;
+   margin-left: 2%;
+}
+.cream-1{
+  width: 21%;
+  height: 220px;
+ margin-top: 30px;
+  background-image: url(rajbhog.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+
+}
+.cream-1:hover{
+  opacity: 1;
+  width: 21%;
+  height: 220px;
+  background-image: url(rajbhog.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+}
+.cream-2{
+  width: 22%;
+  height: 215px;
+  margin-top: 40px;
+  margin-left: 30px;
+  background-image: url(vanila.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+
+}
+.cream-2:hover{
+  opacity: 1;
+  width: 22%;
+  height: 215px;
+  background-image: url(vanila.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+}
+.cream-3{
+  width: 22%;
+  height: 220px;
+  margin-top: 35px;
+  margin-left: 30PX;
+  background-image: url(cone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+
+}
+.cream-3:hover{
+  opacity: 1;
+  width: 22%;
+  height: 220px;
+  background-image: url(cone.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 70%;
+}
+.cream-4{
+  width: 22%;
+  height: 220px;
+  margin-top: 40px;
+  margin-left: 30px;
+  background-image: url(mixicream.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+ border-radius:50% ;
+
+}
+.cream-4:hover{
+  opacity: 1;
+  width: 22%;
+  height: 220px;
+  background-image: url(mixicream.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+ border-radius: 50%;
+}
+
+
+.cream-btn{
+  width: 100%;
+   background: none;
+  margin-top: 160px;
+  font-size: xx-large;
+  background-color: none;
+  color:white;
+  opacity: 1;
+text-align: center;
+border: none;
+cursor: pointer;
+font-weight: 100px;
+
+  
+}
+.cream-btn:hover{
+  opacity: 1;
+letter-spacing: 1px;
+  margin-top: 90px;
+font-size:250%;
+transition: 1s;
+}
+.cream-btn1{
+  width: 100%;
+   background: none;
+  margin-top: 150px;
+  font-size: xx-large;
+  background-color: none;
+  color:white;
+  opacity: 1;
+text-align: center;
+border: none;
+cursor: pointer;
+font-weight: 100px;
+
+  
+}
+.cream-btn1:hover{
+  opacity: 1;
+letter-spacing: 5px;
+  margin-top: 90px;
+font-size:250%;
+transition: 1s;
+}
+.cream-btn2{
+  width: 100%;
+   background: none;
+  margin-top: 160px;
+  font-size: xx-large;
+  background-color: none;
+  color:white;
+  opacity: 1;
+text-align: center;
+border: none;
+cursor: pointer;
+font-weight: 100px;
+
+  
+}
+.cream-btn2:hover{
+  opacity: 1;
+letter-spacing: 5px;
+  margin-top: 90px;
+font-size:250%;
+transition: 1s;
+}
+.cream-btn3{
+  width: 100%;
+   background: none;
+  margin-top: 160px;
+  font-size: xx-large;
+  background-color: none;
+  color:white;
+  opacity: 1;
+text-align: center;
+border: none;
+cursor: pointer;
+font-weight: 100px;
+
+  
+}
+.cream-btn3:hover{
+  opacity: 1;
+letter-spacing: 3px;
+  margin-top: 90px;
+font-size:250%;
+transition: 1s;
+}
+#ice a{
+  text-decoration: none;
+  text-overflow:hidden ;
+  color: white;
+
+}
+#ice a:hover{
+  color: black;
+
+}
+#cream a{
+  text-decoration: none;
+  text-overflow:hidden ;
+  color: white;
+
+}
+#cream a:hover{
+  color: black;
+
+}
+    </style>
+</head>
+<body>
+     <div class="head">
+           <div class="head-1">
+            <h1>Food Zone</h1><hr>
+           </div>
+              <div class="topnav">
+                 <a  class="home" href="index.html">Home</a>
+                 <a class="sweet" href="website_1.html">Sweets</a>
+                 <a class="Thali" href="website_2.html">Thali</a>
+                 <a class="junkfood" href="website_3.html">Junkfood</a>
+                 <a class="icecream" href="website_4.html">Icecream</a>
+                 <a class="about" href="website_5.html">About</a>
+              </div>
+       </div>
+       <h1 style="color:black;">Order your favorite <span style="color:white;"><u style="color: black;">IceCream</u></span></h1>
+       <h3 style="color: black;">We give You a tasty and varity of IceCream  on just 30 min  on your door just click and order your IceCream.</h3>
+       <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="ice1.png" style="width:100%; height:400px;">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="ice2.jpg" style="width:100%; height:400px;">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="ice3.jpg" style="width:100%; height:400px;">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4/ 5</div>
+            <img src="ice4.webp" style="width:100%; height:400px;">
+            <div class="text">Caption four</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="ice5.jpg" style="width:100%; height:400px;">
+            <div class="text">Caption five</div>
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+            <!-- 
+      THIS IS Second IMAGE
+     -->
+    <DIV id="ice">
+      <div class="ice-1">
+
+       <button class="ice-btn">
+        <a href="websiteform.html">choclate</a>
+      </button>
+      </div>
+      
+      <div class="ice-2">
+
+       <button class="ice-btn1">
+        <a href="websiteform.html">Cone</a>
+      </button>
+      </div>
+
+
+      <div class="ice-3">
+
+       <button class="ice-btn2">
+        <a href="websiteform.html">Butterscotch</a>
+      </button>
+      </div>
+       
+      
+      <div class="ice-4">
+
+       <button class="ice-btn3"> <a href="websiteform.html">Kulfi</a>
+        </button>
+      </div><br><br>
+   </DIV>
+   <!-- this is third div -->
+   <DIV id="cream">
+     <div class="cream-1">
+
+      <button class="cream-btn"> <a href="websiteform.html">Rajbhog</a>
+      </button>
+     </div>
+     
+     <div class="cream-2">
+
+      <button class="cream-btn1"> <a href="websiteform.html">Vanila</a>
+      </button>
+     </div>
+
+
+     <div class="cream-3">
+
+      <button class="cream-btn2"> <a href="websiteform.html">Cupcake</a>
+      </button>
+     </div>
+      
+     
+     <div class="cream-4">
+
+      <button class="cream-btn3"> <a href="websiteform.html">MixFlavor</a>
+      </button>
+     </div><br><br>
+  </DIV>
+            <!-- this is footer -->
+            <div class="footer">
+                <footer>
+                   <h4>If you feel hungry don't worry just visit our site and order your favorite food on just one click and enjoy the very cheapest location in your area.And order deleverd on the time.</h4>
+        
+                </footer>
+               </div>
+               
+</body>
+</html>
